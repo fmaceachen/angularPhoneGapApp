@@ -1,0 +1,9 @@
+<section ng-model='myPicture'>
+    <button ng-click="showGallery()">Go to gallery</button>
+    <div>
+        <ul>
+            <li ng-repeat="pic in myPictures"><img ng-src="{{pic}}"/></li>
+        </ul>
+    </div>
+    <a href ui-sref="contacts">Go to contacts</a>
+</section>

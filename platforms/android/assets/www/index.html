@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+        <title>PhoneGap + AngularJS DEMO</title>
+    </head>
+    <body>
+        <div ui-view></div>
+
+        <script type="text/javascript" src="libs/angular/angular.js"></script>
+        <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="libs/angular-route/angular-route.min.js"></script>
+        <script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="libs/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/routes.js"></script>
+        <script type="text/javascript" src="js/controllers/HomeController.js"></script>
+        <script type="text/javascript" src="js/controllers/CameraController.js"></script>
+        <script type="text/javascript" src="js/controllers/GalleryController.js"></script>
+        <script type="text/javascript" src="js/controllers/ContactsController.js"></script>
+        <script type="text/javascript" src="js/directives/Camera.js"></script>
+        <script type="text/javascript" src="js/services/GalleryServices.js"></script>
+        <script type="text/javascript" src="js/services/ContactsService.js"></script>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">phoneGapApp.initialize()</script>
+
+    </body>
+</html>

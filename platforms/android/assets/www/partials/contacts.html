@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div>Contacts</div>
+    <div class="row">
+        <div class="col-xs-6 vcenter"><input ng-model="nameFilter"></div>
+        <div class="col-xs-6 vcenter">
+            <button ng-click="getContacts(nameFilter)" type="button" class="btn btn-default">Get contacts</button>
+        </div>
+    </div>
+    <div class="row" ng-repeat="chunk in contacts">
+        <div class="col-xs-4" ng-repeat="contact in chunk">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <span>{{contact.displayName}}</span><br>
+                    <img ng-src="{{contact.photos[0].value}}" class="img-responsive" alt="Responsive image"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
